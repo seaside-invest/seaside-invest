@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seaside Invest — v3.2</title>
+  <meta name="description" content="Seaside Invest — familieøkonomi, utbytte og mål i ett dashboard.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <img src="assets/logo.svg" alt="Seaside">
+      <div class="brand">Seaside Invest</div>
+      <nav>
+        <a href="#dashboard" class="active">Dashbord</a>
+        <a href="#dividends">Utbytte</a>
+        <a href="#rentals">Utleie</a>
+        <a href="#kids">Barna</a>
+        <a href="#goals">Sparemål</a>
+        <a href="#family">Hvor er familien?</a>
+        <a href="#settings">Innstillinger</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="app" class="main"></main>
+
+  <div class="live-bar">
+    <button class="btn" id="themeBtn">Bytt tema</button>
+    <button class="btn" id="fullscreenBtn">Fullskjerm</button>
+    <div class="badge clock" id="clock">--:--</div>
+  </div>
+
+  <footer>© 2025 Seaside Invest — Demo v3.2 • Auto-refresh 5 min • Klar for Netlify</footer>
+  <script type="module" src="js/app.js"></script>
+
+  <script>
+    if('serviceWorker' in navigator){
+      navigator.serviceWorker.register('/sw.js').catch(()=>{});
+    }
+  </script>
+</body>
+</html>

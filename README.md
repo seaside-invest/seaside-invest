@@ -1,16 +1,20 @@
-## Hi there 👋
 
-<!--
-**seaside-invest/seaside-invest** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Seaside Invest — v3.2
 
-Here are some ideas to get you started:
+Oppgraderinger:
+- Tema‑bryter (mørk/lys) med lagring
+- Favicon + meta description
+- Lett animasjon i hero
+- Netlify Forms (tilbakemelding) i Innstillinger
+- Små UI‑polish og hover
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Deploy
+Last opp hele denne mappen til GitHub-repoet ditt (rot). Netlify (koblet til GitHub) bygger automatisk.
+
+## Manuell CLI (valgfritt)
+NETLIFY_AUTH_TOKEN og: `netlify deploy --prod --dir=.`
+
+## v3.4
+- PWA: manifest + service worker (offline/cache)
+- CSV-import for portefølje i Utbytte
+- Små UX/perf-forbedringer
